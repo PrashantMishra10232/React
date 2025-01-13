@@ -38,3 +38,5 @@ function App() {
 }
 
 export default App
+
+// remember to change config in tailwind
