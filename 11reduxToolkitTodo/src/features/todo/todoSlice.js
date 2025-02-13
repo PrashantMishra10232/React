@@ -21,11 +21,7 @@ export const todoSlice = createSlice({
         },
         updateTodo: (state,action)=>{
             const{id,text} =action.payload;
-
-            const todo = state.todos.find((todo)=> todo.id==id)
-            if(todo){
-                todo.text=text;
-            }
+            state.todos.map((todo)=> todo.id===id? todo.text:text)
         }
     }
 })
